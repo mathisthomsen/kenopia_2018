@@ -1,0 +1,115 @@
+.full-2
+    width: 100%
+    background-color: $white-opac
+    overflow: hidden
+    box-shadow: 0px 0px 3px $shadow
+
+    //h2
+        color: $white-opac
+
+        //&:before, &:after
+            background-color: $white-opac
+    .seo
+        max-width: 75%
+        display: block
+        color: $mute
+        line-height: 1.5em
+        margin: 0 auto
+        position: relative
+
+    .flex
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 2rem 0
+        margin-bottom: 2rem
+
+        .ramon, .annika, .mathis
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            box-shadow: 0px 0px 0px 6px $white-opac , 0px 0px 0px 8px $mute
+            display: flex
+            align-items: center
+            justify-content: center
+
+            section
+                color: $white-opac
+                //border-radius: 10px
+                padding: 0.4rem 1.5rem
+                background-color: $mute-transp
+                margin-top: 13rem
+
+                h3
+                    text-align: center
+                    letter-spacing: 2px
+                    font-weight: 100
+                    padding-bottom: 0.4rem
+
+                p
+                    text-align: center
+                    font-weight: 300
+                    color: inherit
+
+                    &:before, &:after
+                        background-color: rgba(100,100,100,0.9)
+                        +transition(0.4s ease-in-out)
+
+                    &:before, &:after
+                        background-color: rgba(0,0,0,0)
+                        opacity: 0.3
+                        content: ""
+                        display: inline-block
+                        height: 1px
+                        position: relative
+                        vertical-align: middle
+                        width: 50%
+                        margin: 0 0.2rem
+                        +transition(0.4s ease-in-out)
+
+                    &:before
+                        right: 0.5em
+                        margin-left: -50%
+
+                    &:after
+                        left: 0.5em
+                        margin-right: -50%
+
+        .annika
+            background:
+                image: url('../img/annika-x1.jpg')
+                color: white
+                repeat: no-repeat
+
+            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+                background:
+                    image: url('../img/annika-x2.jpg')
+                    color: white
+                    repeat: no-repeat
+                    size: 200px 200px
+
+        .mathis
+            background:
+                image: url('../img/mathis-x1.jpg')
+                color: white
+                repeat: no-repeat
+
+            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+                background:
+                    image: url('../img/mathis-x2.jpg')
+                    color: white
+                    repeat: no-repeat
+                    size: 200px 200px
+
+        .ramon
+            background:
+                image: url('../img/ramon-x1.jpg')
+                color: white
+                repeat: no-repeat
+
+            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+                background:
+                    image: url('../img/ramon-x2.jpg')
+                    color: white
+                    repeat: no-repeat
+                    size: 200px 200px

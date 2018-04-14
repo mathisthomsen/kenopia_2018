@@ -1,0 +1,56 @@
+.full-3
+    background:
+        image: url('../img/contact-bg.jpg')
+        size: cover
+        position: center center
+        repeat: no-repeat
+    padding: 4rem 0
+    margin: -1px 0
+
+    @media screen and (min-width: 400px)
+        border-left: 30px solid $full-odd
+        border-right: 30px solid $full-odd
+
+
+    .mail-wrap
+        background-color: rgba(255,255,255,0.4)
+        padding: 1rem 0
+        text-align: center
+        margin-bottom: 2rem
+        width: 100%
+
+        .mail
+            color: $mute
+            opacity: 0.5
+            font:
+                size: 3.6rem
+                weight: 300
+
+            &:hover
+                box-shadow: none
+                -webkit-box-shadow: none
+                -moz-box-shadow: none
+
+    .social
+        padding: 1rem 0 3rem 0
+        text-align: center
+
+        h3
+            font:
+                size: 2rem
+                weight: 300
+            color: $mute
+            opacity: 0.8
+        a
+            color: $mute
+            font-size: 10rem
+            text-align: center
+            margin-right: 0.75rem
+            opacity: 0.4
+            transition: opacity ease-in-out 0.4s
+
+            &:hover
+                opacity: 0.8
+
+            &:last
+                margin-right: 0

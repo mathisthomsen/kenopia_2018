@@ -1,0 +1,95 @@
+.full-1
+    width: 100%
+    background-color: $full-even
+    box-shadow: 0px 0px 3px $shadow
+
+    .content
+
+        a
+            +transition ()
+
+            &:hover
+                box-shadow: 2px 2px 0px $full-even, 3px 3px 0px $highlight
+                -webkit-box-shadow: 2px 2px 0px $full-even, 3px 3px 0px $highlight
+                -moz-box-shadow: 2px 2px 0px $full-even, 3px 3px 0px $highlight
+                +transition ()
+
+.youtube-container
+    display: block
+    margin: 0 auto
+    width: 100%
+    max-width: 900px
+    position: relative
+
+    @media screen and (max-width: 800px)
+        width: 100vw
+        transform: translate(-16px,0)
+
+    .youtube-player
+        display: block
+        width: 100%
+        /* assuming that the video has a 16:9 ratio */
+        padding-bottom: 56.25%
+        overflow: hidden
+        position: relative
+        width: 100%
+        height: 100%
+        cursor: pointer
+        display: block
+
+img.youtube-thumb
+    bottom: 0
+    display: block
+    left: 0
+    margin: auto
+    max-width: 100%
+    width: 100%
+    position: absolute
+    right: 0
+    top: 0
+    height: auto
+
+div.play-button
+    height: 72px
+    width: 72px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    position: absolute
+    //font-family: 'Material Icons'
+    background:
+        image: url("../img/ic_play_circle_outline_white_36px.svg")
+        repeat: no-repeat
+        size: 72px
+    cursor: pointer
+
+#youtube-iframe
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+.vid-underline
+    //padding: 2rem 0 1rem 0
+    color: $mute
+
+.btn
+    width: 10rem
+    display: flex
+    align-items: center
+    justify-content: center
+    background: inherit
+    border: 1px solid $mute-dark
+    margin: 2rem auto 0 auto
+    color: $mute-dark
+    border-radius: 8px
+    padding: 0 0.8rem
+    cursor: pointer
+
+    .label
+        padding-right: 0.5rem
+        font-size: 0.9rem
+
+    .symbol
+        font-size: 2.8rem

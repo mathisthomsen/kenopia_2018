@@ -1,0 +1,152 @@
+.header-wrapper
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+    header
+        background:
+            size: cover
+            position: center center
+        height: 100vh
+        overflow: hidden
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+
+        @media screen and (min-width: 1250px)
+            background-attachment: fixed
+
+        .content
+            padding: 0 !important
+
+        .head
+            height: 100%
+            background-color: $head-darken
+            animation: lighten 14s ease-in-out infinite
+
+            .rapunzel
+                position: relative
+                color: white
+                transform-origin: center center
+
+                img
+                    z-index: 8
+                    top: 50vh
+                    left: 50%
+                    position: absolute
+                    transform: translate(-50%,-50%)
+                    opacity: 1
+                    transition: opcacity ease-in-out 200ms
+
+                    @media screen and (max-width: 666px)
+                        width: em(300px)
+
+                    @media screen and (min-width: 666px)
+                        width: em(500px)
+
+                #systole, #diastole
+                    display: inline-block
+                    position: absolute
+                    box-sizing: content-box
+                    z-index: 1001
+                    opacity: 0.2
+                    border-radius: 50%
+                    top: 50vh
+                    left: 50%
+                    position: absolute
+                    transform: translate(-50%,-50%)
+                    transform-origin: top left
+                    border: 1px $pulse solid
+
+                    @media screen and (min-width: 666px)
+                        width: em(105px)
+                        height: em(105px)
+
+                    @media screen and (max-width: 666px)
+                        width: em(59px)
+                        height: em(59px)
+
+                        @keyframes pulse
+                            0%
+                                border-width : 1px
+                                opacity: 0.2
+
+                            20%
+                                border-width: 13px
+                                opacity: 0.2
+
+                            25%
+                                border-width: 3px
+                                opacity: 0.2
+
+                            40%
+                                border-width: 18px
+                                opacity: 0.4
+
+                            55%
+                                border-width: 1px
+                                opacity: 0.2
+
+                #diastole
+                    animation: pulse 2s ease-in-out infinite
+
+
+        .dig
+            height: 36px
+            width: 36px
+            position: absolute
+            top: 90vh
+            display: inline-block
+            left: 50%
+            margin-left: -18px
+            transition: ease-in-out 200ms
+            z-index: 100
+
+            &:hover
+                top: 89vh
+                //+transition(top)
+
+            &:after
+                content: 'unsere musik'
+                color: white
+                position: relative
+                left: 2.5rem
+                top: -2.15rem
+                display: block
+                width: 6rem
+
+@keyframes lighten
+    0%
+        background-color: $head-darken
+
+    80%
+        background-color: $head-darken
+
+    90%
+        background-color: $head-lighten
+
+    100%
+        background-color: $head-darken
+
+@keyframes pulse
+    0%
+        border-width : 1px
+        opacity: 0.2
+
+    20%
+        border-width: 15px
+        opacity: 0.2
+
+    25%
+        border-width: 5px
+        opacity: 0.2
+
+    40%
+        border-width: 25px
+        opacity: 0.4
+
+    55%
+        border-width: 1px
+        opacity: 0.2
