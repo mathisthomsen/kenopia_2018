@@ -9,13 +9,6 @@
 	],
 "creatorBuild": "26680",
 "files": {
-	"\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.gitignore",
-		"oF": 0
-		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -2452,7 +2445,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 520099779,
-	"displayValue": "Kenopia",
+	"displayValue": "Kenopia_2018",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-drunkArcher",
 	"iconImageWasSetByUser": 0,
