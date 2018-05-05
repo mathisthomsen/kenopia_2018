@@ -11,16 +11,30 @@ footer
         align-items: center
         justify-content: center
 
-        p,a
+        ul
+            list-style-type: none
+
+        li
+            display: inline-block
             color: $white-opac
 
-        p
+            a
+                color: $white-opac
+
+
             &:after
                 content: '|'
                 padding: 0 0.5rem
+                color: $white-opac
 
-        a
-            &:hover
-                box-shadow: none
-                -webkit-box-shadow: none
-                -moz-box-shadow: none
+
+            //p
+                &:after
+                    content: '|'
+                    padding: 0 0.5rem
+
+            a
+                &:hover
+                    box-shadow: none
+                    -webkit-box-shadow: none
+                    -moz-box-shadow: none
