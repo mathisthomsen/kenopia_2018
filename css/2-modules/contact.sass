@@ -4,7 +4,7 @@
         size: cover
         position: center center
         repeat: no-repeat
-    padding: 4rem 0
+    padding: 1rem 0 1rem 0
     margin: -1px 0
 
     @media screen and (min-width: 400px)
@@ -13,17 +13,18 @@
 
 
     .mail-wrap
-        background-color: rgba(255,255,255,0.8)
+        background-color: $mute-dark
         padding: 1rem 0
         text-align: center
-        margin: 0 auto 2rem auto
+        margin: 0 auto 16rem auto
         width: 80%
+        opacity: 0.7
 
         .mail
-            color: $mute
+            color: $white-opac
             opacity: 0.8
             font:
-                size: 3.6rem
+                size: 3rem
                 weight: 300
 
             &:hover
@@ -32,7 +33,7 @@
                 -moz-box-shadow: none
 
     .social
-        padding: 1rem 0 3rem 0
+        padding: 1rem 0 1rem 0
         text-align: center
 
         h3
@@ -42,15 +43,18 @@
             color: $white-opac
             opacity: 0.8
         a
-            color: $white-opac
-            font-size: 10rem
+            color: $mute-dark
+            font-size: 10em
             text-align: center
             margin-right: 0.75rem
-            opacity: 0.8
-            transition: opacity ease-in-out 0.4s
+            opacity: 0.6
+            transition: all ease-in-out 0.4s
+
+            @media screen and (max-width: 600px)
+                opacity: 0.8
 
             &:hover
-                opacity: 0.8
+                opacity: 1
 
             &:last
                 margin-right: 0
